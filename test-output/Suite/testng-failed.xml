@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <parameter name="url3" value="https://naveenautomationlabs.com/opencart/"/>
+    <parameter name="url4" value="https://demo.guru99.com/"/>
+    <parameter name="url1" value="https://www.lambdatest.com/blog/selenium-best-practices-for-web-testing/"/>
+    <parameter name="url2" value="https://www.ministryoftesting.com/articles/websites-to-practice-testing"/>
+    <classes>
+      <class name="secenariothree.SecenarioThreeTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="printMaximumLinksPageTitle" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- secenariothree.SecenarioThreeTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+  <test   name="Test">
+	
+	<parameter name="cityOne" value="Mumbai"></parameter>
+	<parameter name="returnCityOne" value="London-Heathrow, UK (LHR)"></parameter>
+	<parameter name="departureDateOne" value="05/18/2024"></parameter>
+	<parameter name="returnDateOne" value="05/19/2024"></parameter>
+	
+	<parameter name="cityTwo" value="Boston area"></parameter>
+	<parameter name="returnCityTwo" value="Dallas/Fort Worth, TX (DFW)"></parameter>
+	<parameter name="departureDateTwo" value="05/25/2024"></parameter>
+	<parameter name="returnDateTwo" value="05/26/2024"></parameter>
+	
+	
+    <classes>
+      <class name="jetbluehomepage.JetBlueTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
